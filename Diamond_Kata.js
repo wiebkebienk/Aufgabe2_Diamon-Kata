@@ -27,3 +27,26 @@
         module.exports = {
             charArray
         }
+
+//----Aufgabe b----//
+
+    //Quadrant erstellen
+    const quadrant = (input) => {
+        //Array durchlaufen
+        let quadrant = [input.length]
+        for(i = 0; i < input.length; i++){
+            quadrant[i] = []
+            let i = -1;
+            //Array befüllen
+            input.forEach(Buchstabe); {
+                const filling = new Array(input.length);
+                filling.fill("-");
+                i++;
+                //weiter springen, sodass ein Quadrant befüllt wird
+                const where = input.length - i - 1;
+                filling[where] = input[i];
+                quadrant.push(filling);
+            }
+        }
+        return quadrant; 
+    }   
