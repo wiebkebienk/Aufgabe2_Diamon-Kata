@@ -27,3 +27,30 @@
             expect((Ergebnis) => {charArray(Buchstabe)}).toThrow("Das ist kein Buchstabe aus dem Alphabet. Bitte wähle einen anderen!")
         })
     })
+
+
+//----Aufgabe b----//
+
+     //Bezug zum Dokument
+     const {charArray} = require('./diamond_kata.js')
+
+     //was getestet werden soll
+     describe('diamond_kata', () => {
+
+
+        //Test 1: Ausgabe als Quadrant wird getestet
+        it('Sollte einen Quadranten ergeben', () => {
+            //D als Buchstabe verwendet
+            const Buchstabe = charArray('D')
+            Ergebnis = quadrant(Buchstabe)
+            //Das Ergebnis wird getestet
+            expect(Ergebnis).toStrictEqual(
+                [['A', '-', '-','-'], 
+                ['-', 'B', '-','-'], 
+                ['-', '-', 'C','-']
+                ['-', '-', '-','D']]
+            )
+        })
+    })
+
+
