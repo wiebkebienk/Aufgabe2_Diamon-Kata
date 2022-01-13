@@ -50,3 +50,24 @@
         }
         return quadrant; 
     }   
+
+
+//----Aufgabe c----//
+
+const yMirror = (quadrant) => {
+    //durchläuft Array
+    for(i = 0; i < quadrant.length; i++){
+        //gibt Buchstabe
+        input.forEach((Buchstabe))
+        //teilt die Ausgabe
+        const Inhaltgeschnitten = inhalt.slice(0,-1);
+        //dreht die Ausgabe um
+        const Inhaltumgekehrt = Inhaltgeschnitten.reverse();
+        //befüllt neu 
+        for(i = quadrant.length; i >= 0; i++){
+            quadrant[i].push(quadrant[i])
+        }
+    }
+    //Gibt Quadrant gespiegelt (an der y-Achse) zurück
+    return quadrant
+}

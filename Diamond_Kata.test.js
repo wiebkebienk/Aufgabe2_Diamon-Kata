@@ -54,3 +54,26 @@
     })
 
 
+//----Aufgabe c----//
+
+    //Bezug zum Dokument
+    const {charArray} = require('./diamond_kata.js')
+
+    //was getestet werden soll
+    describe('diamond_kata', () => {
+
+        //Test 1: Ausgabe des Quadranten wird getestet
+        it('Sollte einen gespiegelten Quadranten ausgeben', () => {
+            //D wird als Buchstabe verwendet
+            const Buchstabe = charArray('D')
+            //Vorraussetzungen
+            quadrant = Inhaltgeschnitten(Buchstabe)
+            yMirror = Inhaltumgekehrt(quadrant)
+            //Das Ergebnis wird getestet
+            expect(yMirror.toStrictEqual(
+                [['-','-', '-', 'A', '-', '-', '-'], 
+                ['-','-', 'B', '-', 'B', '-', '-'], 
+                ['-','C', '-', '-', '-', 'C', '-']
+                ['D','-', '-', '-', '-', '-', 'D']]))
+        })
+    })
