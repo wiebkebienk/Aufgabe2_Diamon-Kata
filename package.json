@@ -1,0 +1,24 @@
+{
+  "name": "aufgabe2_diamon-kata",
+  "version": "1.0.0",
+  "description": "Aufgabe 2 im Kurs Web Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiebkebienk/Aufgabe2_Diamon-Kata.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiebkebienk/Aufgabe2_Diamon-Kata/issues"
+  },
+  "homepage": "https://github.com/wiebkebienk/Aufgabe2_Diamon-Kata#readme",
+  "dependencies": {
+    "jest": "^27.4.7",
+    "save": "^2.4.0"
+  }
+}
